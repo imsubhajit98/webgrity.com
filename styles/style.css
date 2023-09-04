@@ -1,11 +1,11 @@
 @font-face {
-  font-family: open;
-  src: url(../fonts/OpenSans-Semibold.ttf);
+  font-family: play-regular;
+  src: url(../fonts/Play-Regular.ttf);
 }
 
 @font-face {
-  font-family: open2;
-  src: url("../fonts/OpenSans-ExtraBold.ttf");
+  font-family: open;
+  src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 * {
@@ -55,6 +55,7 @@ section {
   align-items: center;
   z-index: 100;
   background: var(--bg-color);
+  height: 100px;
 }
 
 .header .sticky {
@@ -122,7 +123,7 @@ section {
   width: 100%;
   height: 560px;
   padding: 0 !important;
-  margin-top: 130px;
+  margin-top: 50px;
 }
 
 /* --------------------------- about ---------------------------------------*/
@@ -130,17 +131,21 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
+  width: 100%;
+  margin-bottom: 50px;
 }
 .about-part1 {
   width: 50%;
+  /* display: flex;
+  justify-content: end; */
 }
 .about-part2 {
   width: 50%;
 }
 
 .about-img img {
-  width: 30vw;
+  width: 100%;
 }
 
 .heading {
@@ -148,7 +153,7 @@ section {
   font-size: 4.5rem;
   color: var(--main-color);
   text-transform: uppercase;
-  font-family: open2;
+  font-family: play-regular;
 }
 .about-content {
   margin-left: 3rem;
@@ -158,20 +163,22 @@ section {
   text-align: justify;
 }
 
-.about-content h3 {
-  font-size: 2.6rem;
-  position: relative;
+.about-subheading {
+  font-size: 2rem;
+  line-height: 30px;
   text-align: left;
 }
-
-.about-content h3 :after {
-  position: absolute;
+.child{
+  position: relative;
+}
+.child::after {
   content: "";
-  height: 20px;
-  left: 0;
-  right: 0;
-  width: 50%;
-  background: green;
+  position: absolute;
+  height: 3px;
+  left: 0px;
+  bottom: -5px;
+  width: 150px;
+  background-color: rgb(228, 1, 1);
 }
 
 .about-content p {
@@ -196,7 +203,7 @@ section {
   font-size: 3.5rem;
   color: var(--text-color);
   /* text-transform: uppercase; */
-  font-family: open2;
+  font-family: open;
 }
 
 .footer-text {
